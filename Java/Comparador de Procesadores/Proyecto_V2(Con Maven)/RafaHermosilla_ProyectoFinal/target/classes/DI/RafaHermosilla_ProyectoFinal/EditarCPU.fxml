@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="600.0" styleClass="background" stylesheets="@aspectoAplicacion.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DI.RafaHermosilla_ProyectoFinal.EditarCPUController">
+   <children>
+      <Label layoutX="142.0" layoutY="21.0" styleClass="label-header" text="Editar Procesador" />
+      <Label layoutX="186.0" layoutY="117.0" text="Escoja el Procesador que desea editar" />
+      <Label layoutX="243.0" layoutY="200.0" text="¿Que desea editar?" />
+      <ComboBox fx:id="cbxCPU" layoutX="224.0" layoutY="153.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbxOpciones" layoutX="223.0" layoutY="243.0" onAction="#Cambiar" prefWidth="150.0" />
+      <TextField fx:id="txtProcesador" layoutX="196.0" layoutY="310.0" onKeyTyped="#comprobarTipo" />
+      <Button fx:id="btnConfirmar" layoutX="231.0" layoutY="385.0" mnemonicParsing="false" onAction="#Confirmar" prefHeight="43.0" prefWidth="136.0" text="Confirmar" />
+      <ImageView fitHeight="43.0" fitWidth="38.0" layoutX="31.0" layoutY="33.0" onMouseClicked="#VolverVentanaPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/atras.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cbxMarca" layoutX="196.0" layoutY="310.0" prefHeight="36.0" prefWidth="204.0" visible="false" />
+   </children>
+</Pane>

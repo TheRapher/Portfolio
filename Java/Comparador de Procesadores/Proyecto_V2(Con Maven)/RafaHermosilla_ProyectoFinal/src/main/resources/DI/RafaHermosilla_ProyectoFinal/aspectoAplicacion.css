@@ -1,0 +1,226 @@
+.background {
+    -fx-background-color:#1E053C;
+	-fx-background-size: cover;
+}
+
+.label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #1E053C;
+    -fx-control-inner-background: #1E053C;
+    -fx-background-color: #1E053C;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        WHITE
+        WHITE
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1E053C;
+    -fx-background-color: WHITE, derive(#1E053C,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+	-fx-background-color: black;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+/* 
+ * Metro style Push Button
+ * Author: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #4B3963;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+.button:hover {
+    -fx-background-color: #37264f;
+}
+.text-field{
+}
+.password-field{
+}
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #37264f;
+  -fx-text-fill: white;
+}
+
+.button:focused {
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #4B3963;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #4B3963;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+/*TAB PANE */
+
+
+/* Modificar el color de fondo del área del Panel de TabPane */
+.tab-pane {
+    -fx-background-color: #1E053C;
+}
+/* Modificar el color de fondo de la pestaña */
+.tab {
+    -fx-background-color: #1E053C;
+}
+/* Modificar el color de fondo de la barra superior */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: -fx-outer-border, -fx-text-box-border,#1E053C;
+}
+/* Modificar el color del texto en la pestaña */
+.tab-label {
+    -fx-text-fill: white;
+}
+/* Selector secundario, seleccione su etiqueta de elemento secundario cuando se selecciona Tabulador 
+.tab:selected .tab-label {
+    -fx-text-fill: #4B3963;
+}
+/* Establecer el color de fondo cuando se selecciona la pestaña 
+.tab:selected {
+    -fx-background-color: #4B3963;*/
+    
+}
+/* Cuando se selecciona Tab, seleccione su borde y modifique el estilo */
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 0px;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #1E053C;
+}
+
+
+.chart-plot-background {
+    -fx-background-color: #2E0E54;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #2E0E54;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #2E0E54;
+}
+.chart-alternative-row-fill {
+    -fx-fill: #2E0E54;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+.chart-legend {
+   -fx-background-color:transparent;
+   -fx-padding: 20px;
+}
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+ 
+.chart-legend-item{
+    -fx-text-fill: white;
+}
+.axis {
+    -fx-font-size: 1.4em;    
+    -fx-tick-label-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+.default-color0.chart-bar{
+	-fx-bar-fill:#4D648D;
+}
+.default-color1.chart-bar{
+	-fx-bar-fill:#D0E1F9;
+}
+.data0.chart-pie { 
+	-fx-pie-color: #4D648D;
+ }
+.data1.chart-pie { 
+	-fx-pie-color: #D0E1F9;
+ }

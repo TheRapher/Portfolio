@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@aspectoAplicacion.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DI.RafaHermosilla_ProyectoFinal.OpcionesController">
+  <tabs>
+    <Tab text="Cuenta">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="21.0" layoutY="100.0" prefHeight="25.0" prefWidth="142.0" styleClass="label-bright" text="Correo electronico:" />
+                  <Label layoutX="21.0" layoutY="140.0" prefHeight="25.0" prefWidth="91.0" styleClass="label-bright" text="Contraseña:" />
+                  <Label layoutX="21.0" layoutY="41.0" prefHeight="25.0" prefWidth="66.0" styleClass="label-bright" text="Usuario:" />
+                  <Label layoutX="22.0" layoutY="250.0" prefHeight="25.0" prefWidth="127.0" styleClass="label-bright" text="Tipo de Usuario:" />
+                  <Label layoutX="21.0" layoutY="66.0" onMouseClicked="#modificarUsuario" text="¿Desea modificar el usuario?" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label layoutX="21.0" layoutY="161.0" onMouseClicked="#modificarContraseña" text="¿Desea modificar la contraseña?" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label fx:id="lblTipo" layoutX="23.0" layoutY="271.0" onMouseClicked="#modificarTipo" prefHeight="15.0" prefWidth="223.0" text="¿Desea modificar su tipo de usuario?" underline="true" visible="false">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label fx:id="usuario" layoutX="83.0" layoutY="41.0" styleClass="label-bright" text="Ejemplo" />
+                  <Label fx:id="tipoUsuario" layoutX="144.0" layoutY="250.0" styleClass="label-bright" text="PREMIUM" />
+                  <Label fx:id="contraseña" layoutX="113.0" layoutY="140.0" styleClass="label-bright" text="************" />
+                  <Label fx:id="email" layoutX="163.0" layoutY="100.0" styleClass="label-bright" text="ejemplo@gmail.com" />
+                  <Button fx:id="btnAceptar" layoutX="477.0" layoutY="298.0" mnemonicParsing="false" onAction="#cambiar" text="Aceptar" />
+                  <Label layoutX="23.0" layoutY="194.0" prefHeight="25.0" prefWidth="142.0" styleClass="label-bright" text="Doble Verificacion:" />
+                  <Label fx:id="Verificacion" layoutX="166.0" layoutY="195.0" prefHeight="25.0" prefWidth="136.0" styleClass="label-bright" text="Desactivado" />
+                  <Label layoutX="22.0" layoutY="216.0" onMouseClicked="#modificarVerificacion" prefHeight="20.0" prefWidth="206.0" text="¿Desea modificar su verificacion?" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

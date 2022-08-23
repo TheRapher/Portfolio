@@ -1,0 +1,2 @@
+Falta el entorno virtual.
+Para crearlo poner en nuestra ruta de trabajo:virtualenv env

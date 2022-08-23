@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<ScrollPane prefHeight="446.0" prefWidth="599.0" styleClass="background" stylesheets="@aspectoAplicacion.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DI.RafaHermosilla_ProyectoFinal.CaracteristicasCPUController">
+   <content>
+      <Pane prefHeight="1334.0" prefWidth="582.0" styleClass="background" stylesheets="@aspectoAplicacion.css">
+         <children>
+            <TableView fx:id="tabla" layoutX="2.0" layoutY="129.0" prefHeight="299.0" prefWidth="565.0">
+              <columns>
+                <TableColumn fx:id="tbCaracteristicas" editable="false" prefWidth="180.00003576278687" text="Caracteristicas" />
+                <TableColumn fx:id="tbCPU1" editable="false" minWidth="0.0" prefWidth="190.6666717529297" text="CPU1" />
+                  <TableColumn fx:id="tbCPU2" editable="false" prefWidth="215.33334350585938" text="CPU2" />
+              </columns>
+            </TableView>
+            <PieChart fx:id="pcComparador" animated="false" labelLineLength="30.0" labelsVisible="false" layoutX="95.0" layoutY="900.0" prefHeight="302.0" prefWidth="399.0" />
+            <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="14.0" layoutY="29.0" onMouseClicked="#Volver" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/atras.png" />
+               </image>
+            </ImageView>
+            <BarChart fx:id="CaracteristirasGrafico" animated="false" layoutX="5.0" layoutY="493.0" prefHeight="405.0" prefWidth="568.0">
+              <xAxis>
+                <CategoryAxis fx:id="Categoria" animated="false" prefHeight="27.0" prefWidth="344.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="Numeros" animated="false" prefHeight="63.0" prefWidth="28.0" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Label layoutX="167.0" layoutY="41.0" styleClass="label-header" text="Caracteristicas" />
+            <Label layoutX="179.0" layoutY="437.0" styleClass="label-header" text="Comparativa" />
+            <Button layoutX="123.0" layoutY="1255.0" mnemonicParsing="false" onAction="#btnVolver" prefHeight="40.0" prefWidth="120.0" text="Volver" />
+            <Button layoutX="290.0" layoutY="1255.0" mnemonicParsing="false" onAction="#btnValorar" prefHeight="40.0" prefWidth="120.0" text="Valorar" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

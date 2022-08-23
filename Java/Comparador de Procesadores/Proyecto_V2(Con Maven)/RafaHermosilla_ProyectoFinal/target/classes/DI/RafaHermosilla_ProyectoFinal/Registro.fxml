@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="444.0" styleClass="background" stylesheets="@aspectoLogin.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DI.RafaHermosilla_ProyectoFinal.RegistroController">
+   <children>
+      <TextField fx:id="txtUsuario" layoutX="120.0" layoutY="164.0" onKeyTyped="#limitador" promptText="Usuario" />
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="37.0" prefHeight="62.0" prefWidth="444.0" styleClass="label-header" text="Registrarse" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrarse" layoutX="163.0" layoutY="323.0" mnemonicParsing="false" onAction="#Confirmar" prefHeight="44.0" prefWidth="119.0" text="Confirmar" />
+      <TextField fx:id="txtCorreo" layoutX="118.0" layoutY="115.0" promptText="Correo Electronico" />
+      <PasswordField fx:id="txtContraseña" layoutX="120.0" layoutY="215.0" promptText="Contraseña" />
+      <PasswordField fx:id="txtContraseñaConfirmar" layoutX="120.0" layoutY="262.0" promptText="Confirmar contraseña" />
+      <ImageView fx:id="imgAtras" fitHeight="36.0" fitWidth="40.0" layoutX="18.0" layoutY="24.0" onMouseClicked="#Atras" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/atras.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblCorreo" layoutX="324.0" layoutY="123.0" prefHeight="11.0" prefWidth="119.0" styleClass="label-bright" text="*Campo Obligatorio" textFill="#f41313" visible="false" />
+      <Label fx:id="lblConfirmarContraseña" layoutX="324.0" layoutY="272.0" prefHeight="11.0" prefWidth="119.0" styleClass="label-bright" text="*Campo Obligatorio" textFill="#f41313" visible="false" />
+      <Label fx:id="lblContraseña" layoutX="324.0" layoutY="225.0" prefHeight="11.0" prefWidth="119.0" styleClass="label-bright" text="*Campo Obligatorio" textFill="#f41313" visible="false" />
+      <Label fx:id="lblUsuario" layoutX="324.0" layoutY="174.0" prefHeight="11.0" prefWidth="119.0" styleClass="label-bright" text="*Campo Obligatorio" textFill="#f41313" visible="false" />
+      <Label fx:id="LimitadorUsuario" layoutX="280.0" layoutY="172.0" prefHeight="20.0" prefWidth="42.0" styleClass="label-bright" stylesheets="@application.css" text=" 0/10" />
+      <Label fx:id="lblContraseña2" layoutX="323.0" layoutY="225.0" prefHeight="16.0" prefWidth="119.0" styleClass="label-bright" text="f" textFill="#f41313" visible="false" />
+   </children>
+</Pane>

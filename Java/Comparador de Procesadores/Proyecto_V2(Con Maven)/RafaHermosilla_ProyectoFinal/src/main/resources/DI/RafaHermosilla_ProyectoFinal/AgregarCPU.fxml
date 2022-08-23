@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" styleClass="background" stylesheets="@aspectoLogin.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DI.RafaHermosilla_ProyectoFinal.AgregarCPUController">
+   <children>
+      <Label layoutX="134.0" layoutY="24.0" styleClass="label-header" text="Añadir Procesador" />
+      <TextField fx:id="txtEnlace" layoutX="198.0" layoutY="427.0" onKeyTyped="#Comprobar" promptText="Enlace Web" />
+      <TextField fx:id="txtHilos" layoutX="198.0" layoutY="379.0" onKeyTyped="#Comprobar" promptText="Hilos" />
+      <TextField fx:id="txtNombre" layoutX="197.0" layoutY="106.0" onKeyTyped="#Comprobar" promptText="Nombre" />
+      <TextField fx:id="txtMemoria" layoutX="198.0" layoutY="332.0" onKeyTyped="#Comprobar" promptText="Memoria Cache" />
+      <TextField fx:id="txtFrecuencia" layoutX="197.0" layoutY="199.0" onKeyTyped="#Comprobar" promptText="Frecuencia" />
+      <TextField fx:id="txtFrecuenciaMax" layoutX="197.0" layoutY="244.0" onKeyTyped="#Comprobar" promptText="Frecuencia Maxima" />
+      <TextField fx:id="txtNucleos" layoutX="198.0" layoutY="287.0" onKeyTyped="#Comprobar" promptText="Nucleos" />
+      <Button fx:id="btnConfirmar" layoutX="246.0" layoutY="492.0" mnemonicParsing="false" onAction="#Confirmar" prefHeight="45.0" prefWidth="108.0" text="Añadir" />
+      <ComboBox fx:id="cbxMarca" layoutX="197.0" layoutY="154.0" prefHeight="36.0" prefWidth="204.0" />
+      <Label fx:id="lblNombre" layoutX="411.0" layoutY="114.0" styleClass="label-bright" stylesheets="@aspectoLogin.css" text="*Campo Obligatorio" visible="false" />
+      <Label fx:id="lblFrecuencia" layoutX="411.0" layoutY="209.0" styleClass="label-bright" stylesheets="@aspectoLogin.css" text="*Campo Obligatorio" visible="false" />
+      <Label fx:id="lblFrecuenciaMax" layoutX="411.0" layoutY="254.0" styleClass="label-bright" stylesheets="@aspectoLogin.css" text="*Campo Obligatorio" visible="false" />
+      <Label fx:id="lblNucleos" layoutX="415.0" layoutY="297.0" styleClass="label-bright" stylesheets="@aspectoLogin.css" text="*Campo Obligatorio" visible="false" />
+      <Label fx:id="lblMemoria" layoutX="415.0" layoutY="342.0" styleClass="label-bright" stylesheets="@aspectoLogin.css" text="*Campo Obligatorio" visible="false" />
+      <Label fx:id="lblHilos" layoutX="415.0" layoutY="389.0" styleClass="label-bright" stylesheets="@aspectoLogin.css" text="*Campo Obligatorio" visible="false" />
+      <ImageView fx:id="imgVolver" fitHeight="45.0" fitWidth="49.0" layoutX="23.0" layoutY="33.0" onMouseClicked="#VolverAplicacion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/atras.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

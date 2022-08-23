@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@aspectoAplicacion.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DI.RafaHermosilla_ProyectoFinal.ComparatorCPUController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="CPU">
+            <items>
+                  <MenuItem fx:id="Añadir" mnemonicParsing="false" onAction="#AñadirCPU" text="Añadir" />
+              <MenuItem fx:id="Editar" mnemonicParsing="false" onAction="#EditarCPU" text="Editar" />
+                  <MenuItem fx:id="Borrar" mnemonicParsing="false" onAction="#BorrarCPU" text="Borrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+              <MenuItem fx:id="Usuario" mnemonicParsing="false" onAction="#UsuarioOpciones" text="Usuario" />
+                  <MenuItem fx:id="Cerrar" mnemonicParsing="false" onAction="#CerrarSesion" text="Cerrar sesion" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="AcercaDe" mnemonicParsing="false" onAction="#AcercaDeOpcion" text="Acerca de..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ComboBox fx:id="cmbox1" layoutX="95.0" layoutY="210.0" onAction="#cambiarImagen" prefWidth="150.0" />
+      <ComboBox fx:id="combox2" layoutX="324.0" layoutY="210.0" onAction="#cambiarImagen2" prefWidth="150.0" />
+      <ImageView fx:id="img1" fitHeight="119.0" fitWidth="150.0" layoutX="95.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/intel.png" />
+         </image></ImageView>
+      <ImageView fx:id="img2" fitHeight="99.0" fitWidth="150.0" layoutX="324.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/intel.png" />
+         </image></ImageView>
+      <Button fx:id="btnComparar" layoutX="237.0" layoutY="302.0" mnemonicParsing="false" onAction="#Comparar" prefHeight="35.0" prefWidth="126.0" text="Comparar" />
+      <Label fx:id="user" layoutX="464.0" layoutY="42.0" prefHeight="30.0" prefWidth="136.0" styleClass="label-bright" text="Usuario">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/usuario.png" />
+               </image></ImageView>
+         </graphic>
+      </Label>
+   </children>
+</Pane>
